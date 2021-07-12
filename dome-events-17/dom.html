@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Dom</title>
+    <style>
+        article {
+            border: 2px solid greenyellow;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            border-radius: 20px;
+            border: 2px solid greenyellow;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Exploring Dom</h1>
+            <article>
+
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nisi vel delectus
+                    beatae eos saepe velit, voluptate optio quaerat accusamus ea perferendis minus! Doloremque, beatae
+                    reprehenderit. Consectetur velit error dolorum!</p>
+            </article>
+            <article>
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Ipsa veritatis voluptates itaque asperiores facilis. Minima at ipsa obcaecati in
+                    perspiciatis doloribus harum asperiores sequi error quis vero, consequuntur eos natus praesentium
+                    aut animi dolor labore neque quisquam eligendi.</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Est sunt recusandae tempore exercitationem molestiae id qui porro quis! Veniam
+                    voluptatem debitis amet, atque in architecto laborum odit vitae nobis numquam corrupti? Nihil quo
+                    enim, illum minus animi praesentium.</p>
+            </article>
+
+
+    </main>
+    <script>
+        Document.body.style.backgroundColor = 'green';
+        var authors = document.getElementsByClassName('author');
+        for (var i = 0; i < authors.length; i++) {
+            var element = authors[i];
+            element.style.backgroundColor = 'red';
+            element.style.margin = '10px';
+
+        }
+
+
+    </script>
+</body>
+
+</html>
