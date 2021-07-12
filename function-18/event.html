@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event management company</title>
+</head>
+
+<body>
+    <h1 onclick="handleClick()">Exploring Events</h1>
+    <button onclick="alert(59)">Click here</button>
+    <button id="second">click here-1</button>
+    <button>click here-2</button>
+    <button>click here-3</button>
+
+</body>
+<script>
+    function handleClick() {
+        document.body.style.backgroundColor = 'cyan';
+    }
+    const secondButton = document.getElementById('second');
+    secondButton.onclick = handleClick;
+</script>
+
+</html>
